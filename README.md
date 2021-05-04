@@ -3,7 +3,7 @@
 See [smartlyio/oats](https://github.com/smartlyio/oats)
 
 ```ts
-import * as adapter from '@smartlyio/oats-fetch-adapter
+import * as adapter from '@smartlyio/oats-fetch-adapter';
 
 // bind the adapter to the oats generated definitions
 adapter.bind(definitions);
