@@ -7,7 +7,7 @@ function toRequestData(data: runtime.server.RequestBody<any> | undefined) {
     return data;
   }
   if (data.contentType === 'application/json') {
-    return axiosToJson(data.value);
+    return dataToJson(data.value);
   }
   if (['application/x-www-form-urlencoded', 'multipart/form-data'].indexOf(data.contentType) >= 0) {
     const form = new FormData();
@@ -21,10 +21,10 @@ function toRequestData(data: runtime.server.RequestBody<any> | undefined) {
     });
     return form;
   }
-  assert.fail('unknown content type for axios client ' + data.contentType);
+  assert.fail('unknown content type for client ' + data.contentType);
 }
 
-function axiosToJson(data: any) {
+function dataToJson(data: any) {
   if (data instanceof runtime.valueClass.ValueClass) {
     return runtime.valueClass.toJSON(data);
   }
@@ -38,7 +38,7 @@ export const bind: runtime.client.ClientAdapter = async (
     return assert.fail('cannot decide which server to use from ' + arg.servers.join(', '));
   }
   const server = arg.servers[0];
-  const params = axiosToJson(arg.query);
+  const params = dataToJson(arg.query);
   const data = toRequestData(arg.body);
   const url = new URL(server + arg.path);
 
