@@ -36,12 +36,12 @@
     "client"
   ],
   "devDependencies": {
-    "@smartlyio/oats-runtime": "4.3.2",
+    "@smartlyio/oats-runtime": "4.4.0",
     "@types/form-data": "2.5.0",
-    "@types/node": "16.11.35",
-    "@typescript-eslint/eslint-plugin": "5.23.0",
-    "@typescript-eslint/parser": "5.23.0",
-    "eslint": "8.15.0",
+    "@types/node": "16.11.36",
+    "@typescript-eslint/eslint-plugin": "5.25.0",
+    "@typescript-eslint/parser": "5.25.0",
+    "eslint": "8.16.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "26.2.2",
