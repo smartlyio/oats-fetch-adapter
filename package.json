@@ -38,9 +38,9 @@
   "devDependencies": {
     "@smartlyio/oats-runtime": "5.1.5",
     "@types/form-data": "2.5.0",
-    "@types/node": "16.18.13",
-    "@typescript-eslint/eslint-plugin": "5.53.0",
-    "@typescript-eslint/parser": "5.53.0",
+    "@types/node": "16.18.14",
+    "@typescript-eslint/eslint-plugin": "5.54.0",
+    "@typescript-eslint/parser": "5.54.0",
     "eslint": "8.35.0",
     "eslint-config-prettier": "8.6.0",
     "eslint-plugin-import": "2.27.5",
